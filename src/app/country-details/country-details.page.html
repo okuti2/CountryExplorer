@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>country details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Country Details</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <img src="{{ country.flag }}" />
+    <ion-card-header>
+      <ion-card-title>{{ country.name }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label>Country Code: </ion-label>
+        <ion-note slot="end">{{ country.alpha3Code}}</ion-note>
+      </ion-item>
+      <ion-item>
+        <ion-label>Capital: </ion-label>
+        <ion-note slot="end">{{ country.capital || 'N/A' }}</ion-note>
+      </ion-item>
+      <ion-item>
+        <ion-label>The population of {{country.name}} is {{country.population | number }}</ion-label>
+      </ion-item>
+      <div class="ion-text-center">
+        <ion-button fill="outline" (click)="addToFavourites(country.alpha3Code)">
+          <ion-icon slot="start" name="star"></ion-icon>Add To Favourites
+        </ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
