@@ -83,16 +83,16 @@ ionic serve
 
 ## Project Structure
 
-`country-explorer/
-│
-├── src/                   # Main source code
-│   ├── app/               # Core application files
-│   ├── assets/            # Images and assets
-│   ├── pages/             # UI pages (List, Details, Favorites)
-│   ├── services/          # API and data services
-│   ├── theme/             # Styling and theme files
-│   └── index.html         # Main HTML file
-│
-├── capacitor.config.json  # Capacitor configuration
-├── package.json           # Project dependencies and scripts
-└── README.md              # Project documentation`
+`country-explorer/`
+`│`
+`├── src/                   # Main source code`
+`│   ├── app/               # Core application files`
+`│   ├── assets/            # Images and assets`
+`│   ├── pages/             # UI pages (List, Details, Favorites)`
+`│   ├── services/          # API and data services`
+`│   ├── theme/             # Styling and theme files`
+`│   └── index.html         # Main HTML file`
+`│`
+`├── capacitor.config.json  # Capacitor configuration`
+`├── package.json           # Project dependencies and scripts`
+`└── README.md              # Project documentation`
