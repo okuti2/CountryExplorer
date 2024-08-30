@@ -11,7 +11,6 @@ Country Explorer is a cross-platform mobile application built with Ionic Framewo
 - [Installation](#installation)
 - [Usage](#usage)
 - [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
 
 ## Features
 
@@ -80,19 +79,3 @@ ionic serve
 - Capacitor: For native functionality and data persistence.
 - TypeScript: For type-safe data modeling.
 - REST Countries API: For fetching country data.
-
-## Project Structure
-
-`country-explorer/`
-`│`
-`├── src/                   # Main source code`
-`│   ├── app/               # Core application files`
-`│   ├── assets/            # Images and assets`
-`│   ├── pages/             # UI pages (List, Details, Favorites)`
-`│   ├── services/          # API and data services`
-`│   ├── theme/             # Styling and theme files`
-`│   └── index.html         # Main HTML file`
-`│`
-`├── capacitor.config.json  # Capacitor configuration`
-`├── package.json           # Project dependencies and scripts`
-`└── README.md              # Project documentation`
